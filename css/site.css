@@ -50,6 +50,19 @@ h4, h5, h6, .h4, .h5, .h6 {
     background: #ffffff;
 }
 
+.about-section {
+    padding-bottom: 2.75rem !important;
+}
+
+.testimonial-section {
+    padding-top: 3.5rem !important;
+}
+
+.menu.section-menu.my-6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
 .section-menu {
     background: #fff9f1;
 }
@@ -97,7 +110,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 
 .wow,
 .animated {
-    animation-duration: 2s !important;
+    animation-duration: 1s !important;
+    animation-timing-function: cubic-bezier(.22, 1, .36, 1) !important;
 }
 
 
@@ -238,6 +252,8 @@ h4, h5, h6, .h4, .h5, .h6 {
 }
 
 .service .delivery-option {
+    background: #fff9f1 !important;
+    border: 1px solid rgba(212, 167, 98, .45);
     box-shadow: 0 0 30px rgba(0, 0, 0, .06);
 }
 
