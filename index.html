@@ -1,0 +1,479 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="keywords" content="L & K Sushi" />
+    <meta name="description" content="L & K Sushi Restaurant" />
+    <title>L & K Sushi</title>
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playball&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/site.css" rel="stylesheet">
+
+</head>
+<body>
+    
+    <!-- Spinner Start -->
+    <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar start -->
+    <div class="container-fluid nav-bar">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-lg py-2">
+                <a href="#home" class="navbar-brand">
+                    <img src="images/logo.png" width="100px" />
+                    <!-- <h1 class="text-primary fw-bold mb-0">Cater<span class="text-dark">Serv</span> </h1> -->
+                </a>
+                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars text-primary"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto">
+                        <a href="#home" class="nav-item nav-link active">Home</a>
+                        <a href="#about" class="nav-item nav-link">About</a>
+                        <a href="#menu" class="nav-item nav-link">Menu</a>
+                        <a href="#testimonial" class="nav-item nav-link">Reviews</a>
+                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#services" class="nav-item nav-link">Pickup & Delivery</a>
+                    </div>
+                    <button class="btn-search btn btn-primary btn-md-square me-4 rounded-circle d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+                    <a href="#menu" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block rounded-pill">Order Now</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control bg-transparent p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+    <span id="home"></span>
+<!-- Hero Start -->
+<div class="container-fluid section-hero py-4 my-4 mt-0">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-7 col-md-12">
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to <span class="text-primary">L & K</span> Sushi</small>
+                <h1 class="display-1 mb-4 animated bounceInDown">Order <span class="text-primary">L & K</span> Sushi. Savor bold flavors you'll love.</h1>
+                <a href="#menu" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Order Now</a>
+                <a href="#menu" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">View Menu</a>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <img src="images/hero-sushi.png" class="img-fluid rounded animated zoomIn" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+<span id="about"></span>
+<!-- About Satrt -->
+<div class="container-fluid section-white py-6">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                <img src="images/about.jpg" class="img-fluid rounded" alt="">
+            </div>
+            <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
+                <h1 class="display-5 mb-4">Our Sushi Story Begins Here</h1>
+                <p class="mb-4">
+                    Chef Supat grew up in Thailand, surrounded by lush forests, mountains, and stunning beaches. Over time, his aspirations grew larger, prompting him to move to the United States. He settled in Florida, where he discovered his passion for sushi. However, the heat of Florida proved too much for him, so he set out to find a new place to call home. He eventually landed in Nashville, TN, where he continued to hone his craft. There, he learned the art of sushi-making, mastering the technique of butchering fish with minimal waste and creating masterpieces in every bite. Chef Supat, alongside his loving wife, is excited to offer a truly exceptional sushi experience in every dish.
+                </p>
+                <div class="row g-4 text-dark mb-5">
+                    <div class="col-sm-6">
+                        <i class="fas fa-share text-primary me-2"></i>Fresh and Fast food Delivery
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fas fa-share text-primary me-2"></i>Takeout - Savor sushi at home
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fas fa-share text-primary me-2"></i>Made with care, served with passion.
+                    </div>
+                    <div class="col-sm-6">
+                        <i class="fas fa-share text-primary me-2"></i>Authentic flavors, anytime you crave.
+                    </div>
+                </div>
+                <!-- <a href="" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<span id="event"></span>
+<span id="menu"></span>
+<!-- Menu Start -->
+<div class="container-fluid menu section-menu py-6 my-6">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Menu</small>
+            <h1 class="display-5 mb-5">Fresh sushi, appetizers, bowls, noodles, desserts, and drinks</h1>
+        </div>
+        <div class="menu-catalog" id="menuCatalog">
+            <div class="menu-category-wrap mb-4">
+                <button class="menu-scroll-btn" type="button" id="menuScrollLeft" aria-label="Scroll menu categories left">&lt;</button>
+                <div class="menu-category-scroll">
+                    <ul class="nav nav-pills menu-category-tabs" id="menuCategoryTabs" role="tablist"></ul>
+                </div>
+                <button class="menu-scroll-btn" type="button" id="menuScrollRight" aria-label="Scroll menu categories right">&gt;</button>
+            </div>
+            <div class="tab-content" id="menuCategoryContent"></div>
+            <button class="menu-cart-button" type="button" id="cartToggle" aria-label="Open cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cartButtonCount">0</span>
+            </button>
+            <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+            <aside class="menu-cart" id="menuCart" aria-hidden="true">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                    <h4 class="mb-0">Cart</h4>
+                    <button class="cart-close" type="button" id="cartClose" aria-label="Close cart">&times;</button>
+                </div>
+                <span class="cart-count d-inline-block mb-3" id="cartCount">0 items</span>
+                <div class="cart-items" id="cartItems">
+                    <p class="cart-empty mb-0">No items added yet.</p>
+                </div>
+                <div class="cart-total d-flex justify-content-between align-items-center mt-4 pt-3">
+                    <span>Total</span>
+                    <strong id="cartTotal">$0.00</strong>
+                </div>
+            </aside>
+        </div>
+    </div>
+</div>
+<!-- Menu End -->
+<span id="testimonial"></span>
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial-section section-white py-6">
+    <div class="container">
+        <div class="text-center">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Testimonial</small>
+            <h1 class="display-5 mb-5">What Customers Say</h1>
+        </div>
+        <div class="row g-4 justify-content-center testimonial-grid">
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item rounded bg-light">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="images/testimonials/testimonial-1.jpg" class="testimonial-avatar rounded-circle flex-shrink-0" width="58" height="58" alt="Pickup customer">
+                    <div class="position-absolute" style="top: 15px; right: 20px;">
+                        <i class="fa fa-quote-right fa-2x"></i>
+                    </div>
+                    <div class="ps-3 my-auto">
+                        <h4 class="mb-0">Pickup Customer</h4>
+                        <p class="m-0">Midtown Nashville</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="d-flex">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                    </div>
+                    <p class="fs-5 m-0 pt-3">Fresh rolls, friendly service, and the order was ready right when promised.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item rounded bg-light">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="images/testimonials/testimonial-2.jpg" class="testimonial-avatar rounded-circle flex-shrink-0" width="58" height="58" alt="Dinner order customer">
+                    <div class="position-absolute" style="top: 15px; right: 20px;">
+                        <i class="fa fa-quote-right fa-2x"></i>
+                    </div>
+                    <div class="ps-3 my-auto">
+                        <h4 class="mb-0">Dinner Order</h4>
+                        <p class="m-0">L & K Sushi guest</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="d-flex">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                    </div>
+                    <p class="fs-5 m-0 pt-3">The sushi platter was generous, colorful, and perfect for sharing at home.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="testimonial-item rounded bg-light">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="images/testimonials/testimonial-3.jpg" class="testimonial-avatar rounded-circle flex-shrink-0" width="58" height="58" alt="Delivery customer">
+                    <div class="position-absolute" style="top: 15px; right: 20px;">
+                        <i class="fa fa-quote-right fa-2x"></i>
+                    </div>
+                    <div class="ps-3 my-auto">
+                        <h4 class="mb-0">Delivery Customer</h4>
+                        <p class="m-0">Nashville order</p>
+                    </div>
+                </div>
+                <div class="testimonial-content">
+                    <div class="d-flex">
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                        <i class="fas fa-star text-primary"></i>
+                    </div>
+                    <p class="fs-5 m-0 pt-3">The miso soup arrived hot, and the rolls still tasted fresh after delivery.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
+
+<span id="location"></span>
+<!-- Location Start -->
+<div class="container-fluid location section-location py-6">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-white border border-primary rounded-pill px-4 py-1 mb-3">Location</small>
+            <h1 class="display-5 mb-5">Visit L&K Sushi</h1>
+        </div>
+        <div class="row g-5 align-items-stretch">
+            <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="location-card h-100 bg-white rounded p-4 p-lg-5">
+                    <h4 class="mb-4">L&K Sushi Nashville</h4>
+                    <div class="location-detail d-flex mb-4">
+                        <div class="btn btn-primary btn-md-square rounded-circle flex-shrink-0">
+                            <i class="fa fa-map-marker-alt"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Address</h5>
+                            <p class="mb-0">614 18th Ave N Nashville, TN 37203</p>
+                        </div>
+                    </div>
+                    <div class="location-detail d-flex mb-4">
+                        <div class="btn btn-primary btn-md-square rounded-circle flex-shrink-0">
+                            <i class="fa fa-phone-alt"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Phone</h5>
+                            <p class="mb-0">(615) 513-0594</p>
+                        </div>
+                    </div>
+                    <div class="location-detail d-flex mb-4">
+                        <div class="btn btn-primary btn-md-square rounded-circle flex-shrink-0">
+                            <i class="fa fa-clock"></i>
+                        </div>
+                        <div class="ps-3">
+                            <h5 class="mb-1">Hours</h5>
+                            <p class="mb-0">7 Days Service</p>
+                        </div>
+                    </div>
+                    <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="https://www.google.com/maps/search/?api=1&query=614%2018th%20Ave%20N%20Nashville%2C%20TN%2037203" target="_blank" rel="noopener">Open in Google Maps</a>
+                </div>
+            </div>
+            <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
+                <div class="map-frame rounded h-100">
+                    <iframe src="https://www.google.com/maps?q=614%2018th%20Ave%20N%20Nashville%2C%20TN%2037203&output=embed" title="L&K Sushi location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Location End -->
+
+<span id="services"></span>
+<!-- Service Start -->
+<div class="container-fluid service section-service py-6">
+    <div class="container">
+        <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
+            <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Pickup & Delivery</small>
+            <h1 class="display-5 mb-5">Choose Pickup or Delivery</h1>
+        </div>
+        <div class="row g-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.1s">
+                <div class="bg-light rounded service-item delivery-option">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <i class="fas fa-utensils fa-5x text-primary mb-4"></i>
+                            <h4 class="mb-3">Midtown Foods</h4>
+                            <p class="mb-4">Order pickup through Midtown Foods.</p>
+                            <a href="https://midtownfoodsnsh.com/s/l-and-k-sushi/614-18th-ave-n-nashville/42f0bb7b-6786-47da-8a7a-2c35d85c7c5a" class="btn btn-primary px-4 py-2 rounded-pill" target="_blank" rel="noopener">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.3s">
+                <div class="bg-light rounded service-item delivery-option">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <i class="fas fa-truck-fast fa-5x text-primary mb-4"></i>
+                            <h4 class="mb-3">UberEats</h4>
+                            <p class="mb-4">Delivery through UberEats.</p>
+                            <a href="https://www.order.store/store/l%26k-sushi-614-18th-ave-n/SjWWH6UkV0yLTP6tv3T4Bw" class="btn btn-primary px-4 py-2 rounded-pill" target="_blank" rel="noopener">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 wow bounceInUp" data-wow-delay="0.5s">
+                <div class="bg-light rounded service-item delivery-option">
+                    <div class="service-content d-flex align-items-center justify-content-center p-4">
+                        <div class="service-content-icon text-center">
+                            <i class="fas fa-bowl-food fa-5x text-primary mb-4"></i>
+                            <h4 class="mb-3">GrubHub</h4>
+                            <p class="mb-4">Delivery through GrubHub.</p>
+                            <a href="https://www.grubhub.com/restaurant/lk-sushi-614-18th-avenue-n-nashville/10716160?msockid=24a34d04e3fd680c16345896e2ea69f9" class="btn btn-primary px-4 py-2 rounded-pill" target="_blank" rel="noopener">Order</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- Service End -->
+
+    <span id="contact"></span>
+<!-- Footer Start -->
+    <div class="container-fluid footer section-footer py-6 my-6 mb-0 wow bounceInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h1 class="text-primary">L&K <span class="text-dark">Sushi</span></h1>
+                        <p class="lh-lg mb-4">Indulge in a culinary experience like no other at L&K Sushi. Our dishes are meticulously prepared to deliver an exceptional taste that will leave you craving for more.</p>
+                        <div class="footer-icon d-flex">
+                            <a href="https://www.tiktok.com/@lk.sushi8" class="btn btn-primary btn-sm-square me-2 rounded-circle" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.yelp.com/biz/l-and-k-sushi-nashville" class="btn btn-primary btn-sm-square me-2 rounded-circle" target="_blank"><i class="fab fa-yelp"></i></a>
+                            <a href="https://www.facebook.com/reel/1407530513887020" class="btn btn-primary btn-sm-square me-2 rounded-circle" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/reel/DLh_XcbMdhK/" class="btn btn-primary btn-sm-square me-2 rounded-circle" target="_blank"><i class="fab fa-instagram"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Popular Menu</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <a class="text-body mb-3" href="#menu"><i class="fa fa-check text-primary me-2"></i>Dragon Fang</a>
+                            <a class="text-body mb-3" href="#menu"><i class="fa fa-check text-primary me-2"></i>OMG for 2</a>
+                            <a class="text-body mb-3" href="#menu"><i class="fa fa-check text-primary me-2"></i>Magic Running Sushi Pizza</a>
+                            <a class="text-body mb-3" href="#menu"><i class="fa fa-check text-primary me-2"></i>Mango Sticky Rice</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Contact Us</h4>
+                        <div class="d-flex flex-column align-items-start">
+                            <p><i class="fa fa-map-marker-alt text-primary me-2"></i> 614 18th Ave N Nashville, Tn 37203</p>
+                            <p><i class="fa fa-phone-alt text-primary me-2"></i> (615) 513-0594</p>
+                            <p><i class="fas fa-envelope text-primary me-2"></i> info@example.com</p>
+                            <p><i class="fa fa-clock text-primary me-2"></i> 7 Days Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-item">
+                        <h4 class="mb-4">Social Gallery</h4>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img src="images/menu-items/buy-one-get-one/omg-for-2.png" class="img-fluid rounded-circle border border-primary p-2" alt="OMG for 2 sushi roll">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/menu-items/deep-fried-sushi-rolls/dragon-fang.jpg" class="img-fluid rounded-circle border border-primary p-2" alt="Dragon Fang sushi roll">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/menu-items/maki-roll/red-dragon.png" class="img-fluid rounded-circle border border-primary p-2" alt="Red Dragon sushi roll">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/menu-items/maki-roll/hamachi-bomb-roll.png" class="img-fluid rounded-circle border border-primary p-2" alt="Hamachi Bomb Roll">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/menu-items/special-sushi-pizza/magic-running-sushi-pizza.png" class="img-fluid rounded-circle border border-primary p-2" alt="Magic Running Sushi Pizza">
+                            </div>
+                            <div class="col-4">
+                                <img src="images/menu-items/dessert/mango-sticky-rice.png" class="img-fluid rounded-circle border border-primary p-2" alt="Mango Sticky Rice">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Copyright Start -->
+    <div class="container-fluid copyright bg-dark py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>2026 L&K Sushi</a>, All rights reserved.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-md-square btn-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/menu-data.js"></script>
+    <script src="js/menu-render.js"></script>
+    <script src="js/site.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
